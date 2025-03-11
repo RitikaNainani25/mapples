@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mappls_gl/mappls_gl.dart';
 
 void main() {
-  MapplsAccountManager.setMapSDKKey("2b540a30f6ab86d001acc2c033b5b7a3"); // Set API Key
+  MapplsAccountManager.setMapSDKKey("2b540a30f6ab86d001acc2c033b5b7a3"); 
   runApp(MaterialApp(home: MapScreen()));
 }
 
@@ -20,7 +20,7 @@ class _MapScreenState extends State<MapScreen> {
       appBar: AppBar(title: Text("Mappls Map")),
       body: MapplsMap(
         initialCameraPosition: CameraPosition(
-          target: LatLng(28.6139, 77.2090), // Default to New Delhi
+          target: LatLng(28.6139, 77.2090), 
           zoom: 12.0,
         ),
         onMapCreated: (controller) {
